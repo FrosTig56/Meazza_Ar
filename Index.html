@@ -1,19 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
         <head>
-                <style> 
-                        body {background-color: lime;}
-                        h1 {color: red}
-                </style>
-                <title>Olyvia's Site</title>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Portofolio Meazza</title>
+                <link rel="stylesheet" href="css/style.css">
         </head>
+
         <body>
-            <h1>Helloooo Olyviaaaaaa</h1>
-            <p> Test latihan <b>haeyyy</b> <i>website pertama</i></p>
-        <ol>
-               <li>Hati</li> 
-               <li>mata</li> 
-        </ol>
+                <!-- Ini Header Nav-->
+           <header class="nav-container">
+                <div class="logo-icon"></div>
+                
+                <nav>
+                        <a>Home</a>
+                        <a href="#our-profile">Our Profile</a>
+                        <a href="#portofolio">Portofolio</a>
+                        <a href="#message-us">Message Us</a>
+                </nav>
+           </header>
+           <hr />
+
+           <main>
+                <!-- Ini Home Content-->
+                <section>
+                        <header>
+                                <h1>Hi Nigga, Welcome to my Website</h1>
+                        </header>
+
+                        <article>
+                               <p>Ini adalah website portofolio Ambaruwo</p>
+                               
+                               <div class="banner-container"></div>
+                        </article>
+                </section>
+
+                <!-- Ini Our Profile Content-->
+                <section id="our-profile">
+                        <header>
+                                <h1>Our Profile</h1>
+                        </header>
+
+                        <article class="profile-content">
+                        <div class="profile-item">
+                                <div class="profile-icon profile-1"></div>
+                                <p>Profile 1</p>
+                        </div>
+
+                        <div class="profile-item">
+                                <div class="profile-icon profile-2"></div>
+                                <p>Profile 2</p>
+                        </div>
+                        
+                        <div class="profile-item">
+                                <div class="profile-icon profile-3"></div>
+                                <p>Profile 3</p>
+                        </div>
+
+                        <div class="divider"></div>
+                        </article>
+                </section>
+
+                <!-- Ini Portofolio Content-->
+                 <section id="portofolio"></section> 
+                        <header>
+                                <h1>Portofolio</h1>
+                        </header>      
+                <!-- Ini Message us Content-->
+                 <section id="message-us"></section> 
+                 <h1>Contact Us</h1>
+  <form action="/submit-your-form-handler" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+    
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>             
+                </main>
         
         </body>
 </html>
